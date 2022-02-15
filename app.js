@@ -48,6 +48,9 @@ function updateObjectifs() {
 
         listObjectifs.appendChild(li)
     }
+
+    const navObjectifsCount = navUlElmt.children[0].querySelector('span')
+    navObjectifsCount.innerText = `(${data.objectifs.length})`
 }
 
 function addObjectif(formELmt, revealElement) {
